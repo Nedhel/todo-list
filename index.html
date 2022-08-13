@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>to Do list</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Lista de cosas por hacer durante la semana</h1>
+        <h2>Hoy es *fecha actual</h2>
+        <input type="text" placeholder="Agrega nuevo pendiente">
+        <select name="weekday" id="select-weekday">
+            <option value="empty"></option>
+            <option value="monday">Lunes</option>
+            <option value="tuesday">Martes</option>
+            <option value="wednesday">Miercoles</option>
+            <option value="thrusday">Jueves</option>
+            <option value="friday">Viernes</option>
+            <option value="saturday">Sabado</option>
+            <option value="sunday">Domingo</option>
+        </select>
+        <button type="button">Agregar a lista</button>
+        <button type="button">Eliminar todos los ya hechos</button>
+        <div class="container">
+            <div id="monday">
+                <h3>Lunes</h3>
+                <ul></ul>
+            </div>
+            <div id="tuesday">
+                <h3>Martes</h3>
+                <ul></ul>
+            </div>
+            <div id="wednesday">
+                <h3>Miercoles</h3>
+                <ul></ul>
+            </div>
+            <div id="thrusday">
+                <h3>Jueves</h3>
+                <ul></ul>
+            </div>
+            <div id="friday">
+                <h3>Viernes</h3>
+                <ul></ul>
+            </div>
+            <div id="saturday">
+                <h3>Sabado</h3>
+                <ul></ul>
+            </div>
+            <div id="sunday">
+                <h3>Domingo</h3>
+                <ul></ul>
+            </div>
+        </div>
+    </body>
+</html>
