@@ -7,11 +7,9 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <div class="container flex-column">
-            <h1>Lista de cosas por hacer durante la semana</h1>
-            <h2>Hoy es *fecha actual</h2>
-            <div>
-                <input type="text" placeholder="Agrega nuevo Tarea">
+        <div class="modal">
+            <div class="modal-container">
+                <input type="text" id="new-task" placeholder="Agrega nuevo Tarea">
                 <select name="weekday" id="select-weekday">
                     <option value="empty"></option>
                     <option value="monday">Lunes</option>
@@ -21,17 +19,21 @@
                     <option value="friday">Viernes</option>
                     <option value="saturday">Sabado</option>
                     <option value="sunday">Domingo</option>
-                </select>
-                <button type="button">Nueva tarea</button>
-                <button type="button">Eliminar todos los hechos</button>
+                </select>                
+                <button type="button" class="add">Agregar</button>
             </div>
+        </div>
+        <div class="container flex-column">
+            <h1>Lista de cosas por hacer durante la semana</h1>
+            <h2>Hoy es *fecha actual</h2>
+            <button type="button" class="add">Nueva tarea</button>
+            <button type="button" class="delete">Eliminar todos los hechos</button>            
         </div>
         <div class="container flex-space">
             <div id="monday">
                 <h3>Lunes</h3>
-                <ul>
-                    <li>Comprar despensa</li>
-                </ul>
+                <input type="checkbox" id="tarea11" name="" value="">
+                <label for="tarea11">Comprar despensa</label><br>
             </div>
             <div id="tuesday">
                 <h3>Martes</h3>
