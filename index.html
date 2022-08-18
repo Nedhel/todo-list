@@ -5,9 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css">
+        <script src="js/index.js"></script>
     </head>
     <body>
-        <div class="modal">
+        <div class="modal" id="modal-task">
             <div class="modal-container">
                 <input type="text" id="new-task" placeholder="Agrega nuevo Tarea">
                 <select name="weekday" id="select-weekday">
@@ -20,44 +21,36 @@
                     <option value="saturday">Sabado</option>
                     <option value="sunday">Domingo</option>
                 </select>                
-                <button type="button" class="add">Agregar</button>
+                <button type="button" class="add" id="add-button">Agregar</button>
             </div>
         </div>
         <div class="container flex-column">
             <h1>Lista de cosas por hacer durante la semana</h1>
-            <h2>Hoy es *fecha actual</h2>
-            <button type="button" class="add">Nueva tarea</button>
-            <button type="button" class="delete">Eliminar todos los hechos</button>            
+            <h2 id="weekdate"></h2>
+            <button type="button" class="add" id="add-task">Nueva tarea</button>
+            <button type="button" class="delete" id="delete-task">Eliminar todos los hechos</button>            
         </div>
         <div class="container flex-space">
             <div id="monday">
-                <h3>Lunes</h3>
-                <input type="checkbox" id="tarea11" name="" value="">
-                <label for="tarea11">Comprar despensa</label><br>
+                <h3>Lunes</h3>                
             </div>
             <div id="tuesday">
                 <h3>Martes</h3>
-                <ul></ul>
             </div>
             <div id="wednesday">
                 <h3>Miercoles</h3>
-                <ul></ul>
             </div>
             <div id="thrusday">
                 <h3>Jueves</h3>
-                <ul></ul>
             </div>
             <div id="friday">
                 <h3>Viernes</h3>
-                <ul></ul>
             </div>
             <div id="saturday">
                 <h3>Sabado</h3>
-                <ul></ul>
             </div>
             <div id="sunday">
                 <h3>Domingo</h3>
-                <ul></ul>
             </div>
         </div>
     </body>
